@@ -1,0 +1,123 @@
+.content {
+  width: 100%;
+  overflow: hidden;
+  background-color: #F5F9FC;
+}
+.content .contentbg {
+  padding-top: 20px;
+  overflow: hidden;
+  background: url(../img/qiyejinrongbg.jpg) top center no-repeat;
+}
+.content .contentbg .con-lun {
+  width: 1122px;
+  margin: 0 auto;
+}
+.content .contentbg .Pro-list {
+  width: 1122px;
+  height: 120px;
+  margin: 5px auto;
+}
+.content .contentbg .Pro-list ul {
+  margin-right: -5px;
+}
+.content .contentbg .Pro-list ul li {
+  width: 220px;
+  height: 120px;
+  float: left;
+  margin-right: 5px;
+  color: #fff;
+  padding: 20px;
+}
+.content .contentbg .Pro-list ul .li-bg1 {
+  background: url(../img/1.png) no-repeat;
+}
+.content .contentbg .Pro-list ul .li-bg2 {
+  background: url(../img/2.png) no-repeat;
+}
+.content .contentbg .Pro-list ul .li-bg3 {
+  background: url(../img/3.png) no-repeat;
+}
+.content .contentbg .Pro-list ul .li-bg4 {
+  background: url(../img/4.png) no-repeat;
+}
+.content .contentbg .Pro-list ul .li-bg5 {
+  background: url(../img/5.png) no-repeat;
+}
+.content .contentbg .pro-box {
+  width: 1122px;
+  position: relative;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+.content .contentbg .pro-box .blue-box {
+  width: 285px;
+  height: 285px;
+  background: url(../img/pro1.jpg) no-repeat;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  z-index: 5;
+}
+.content .contentbg .pro-box .blue-box h3 {
+  font: 700 52px/52px "microsoft yahei";
+  color: #fff;
+  text-align: center;
+  padding: 55px 0 20px;
+}
+.content .contentbg .pro-box .blue-box p {
+  font: 400 14px/14px "microsoft yahei";
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.content .contentbg .pro-box .blue-box a {
+  width: 135px;
+  height: 40px;
+  background: #fff;
+  font: 700 16px/40px "microsoft yahei";
+  color: #2795f2;
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  margin: 20px auto;
+}
+.content .contentbg .pro-box .blue-shadow {
+  width: 335px;
+  height: 335px;
+  background: url(../img/shadow.png) no-repeat;
+  position: absolute;
+  top: 160px;
+  left: -25px;
+  z-index: 2;
+}
+.content .contentbg .pro-box .font-box {
+  border: 1px solid #eee;
+  width: 1075px;
+  height: 310px;
+  background: #fff;
+  margin-left: 45px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  float: left;
+}
+.content .contentbg .pro-box .font-box .description {
+  width: 720px;
+  height: 190px;
+  margin: 74px 0 0 355px;
+}
+.content .contentbg .pro-box .font-box .des-box {
+  width: 360px;
+  height: 53px;
+  margin-bottom: 42px;
+  float: left;
+}
+.content .contentbg .pro-box .font-box .des-box i {
+  width: 50px;
+  height: 53px;
+  display: block;
+  background: url(../img/block.jpg) no-repeat;
+  font: 400 24px/53px "microsoft yahei";
+  color: #24b4fe;
+  text-align: center;
+  margin-right: 25px;
+}

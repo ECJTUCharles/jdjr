@@ -1,0 +1,507 @@
+body,
+html {
+  min-width: 1200px;
+  font-family: 'Microsoft Yahei', Arial, 'Hiragino Sans GB', '\5B8B\4F53';
+  font-size: 12px;
+  color: #5e5e5e;
+}
+body,
+button,
+dd,
+div,
+dl,
+dt,
+form,
+img,
+input,
+li,
+ol,
+p,
+td,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.hover-toon {
+  transition: all 0.6s;
+}
+.hover-toon:hover {
+  transform: translateY(-5px);
+}
+.hover-toright {
+  transition: all 0.6s;
+}
+.hover-toright:hover {
+  transform: translateX(5px);
+}
+.hover-scale {
+  transition: all 0.6s;
+}
+.hover-scale:hover {
+  transform: scale(1.1);
+}
+header {
+  position: relative;
+  z-index: 1000;
+}
+header .topBanner {
+  width: 100%;
+}
+header .topBanner a {
+  position: relative;
+  display: block;
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+}
+header .topBanner a span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: url(../img/topbanner-btn.png) no-repeat;
+}
+header .topNav {
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  position: relative;
+  z-index: 110;
+}
+header .topNav .topNavBox {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+header .topNav .topNavBox > ul {
+  float: right;
+  font-size: 14px;
+  list-style: none;
+}
+header .topNav .topNavBox > ul > li {
+  float: left;
+  padding: 6px 0;
+  position: relative;
+  line-height: 22px;
+}
+header .topNav .topNavBox > ul > li > a {
+  border-left: 1px solid #5e5e5e;
+  padding: 0 10px;
+  color: #a5a5a5;
+}
+header .topNav .topNavBox > ul > li > a:hover {
+  color: #ea544a;
+}
+header .topNav .topNavBox > ul > li:nth-child(1) a {
+  border: none;
+}
+header .topNav .topNavBox > ul > li:nth-child(5) a span {
+  background: url(../img/topbar-new.png) center center no-repeat;
+  display: block;
+  width: 20px;
+  height: 14px;
+  margin: 3px 10px 0 -5px;
+  float: right;
+}
+header .topNav .topNavBox > ul > li:nth-child(6) a {
+  padding-left: 23px;
+}
+header .topNav .topNavBox > ul > li:nth-child(6) a span:nth-child(1) {
+  position: absolute;
+  left: 5px;
+  display: inline-block;
+  width: 13px;
+  height: 22px;
+  background: url(../img/topbar-app.png) no-repeat -105px 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+header .topNav .topNavBox > ul > li:nth-child(6) a:hover span:nth-child(1) {
+  background-position-y: -32px;
+}
+header .navMain {
+  height: 71px;
+  background: #fff;
+}
+header .navMain .navMainBar {
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 1px solid transparent;
+  border-color: transparent;
+  width: 1200px;
+  height: 70px;
+  background: #fff;
+}
+header .navMain .navMainBar .logo {
+  float: left;
+}
+header .navMain .navMainBar .logo > a {
+  display: block;
+  width: 200px;
+  height: 70px;
+}
+header .navMain .navMainBar .navMainBox {
+  margin: 17px 0 0 70px;
+  width: 582px;
+  font-size: 16px;
+  float: left;
+}
+header .navMain .navMainBar .navMainBox > ul > li {
+  float: left;
+  margin-right: 2px;
+  border: 1px solid transparent;
+  width: 66px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  transition: all 0.6s;
+}
+header .navMain .navMainBar .navMainBox > ul > li.current {
+  font-weight: 700;
+  color: #ff5256;
+  background: url(../img/diandian.png) no-repeat 5px 15px;
+}
+header .navMain .navMainBar .navMainBox > ul > li.current a {
+  color: #ff5256;
+}
+header .navMain .navMainBar .navMainBox > ul > li:not(:nth-child(1)):hover > a {
+  position: absolute;
+  z-index: 200;
+  height: 35px;
+  background-color: #fff;
+  color: #323232;
+  font-weight: 700;
+}
+header .navMain .navMainBar .navMainBox > ul > li > a {
+  width: 66px;
+  height: 34px;
+  line-height: 34px;
+  float: left;
+  text-align: center;
+  margin-right: 2px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  color: #323232;
+  transition: all 0.6s;
+}
+header .navMain .navMainBar .navMainBox > ul > li > a .icon {
+  position: absolute;
+  width: 30px;
+  top: -8px;
+  right: -6px;
+  z-index: 100;
+}
+header .navMain .navMainBar .navMainBox > ul > li .pulldown {
+  display: none;
+  position: absolute;
+  left: -1px;
+  top: 54px;
+  z-index: 100;
+  width: 100%;
+  min-height: 160px;
+  padding: 20px 0 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 0 3px 3px;
+}
+header .navMain .navMainBar .navMainBox > ul > li .pulldown ul li {
+  float: left;
+}
+header .navMain .navMainBar .navMainBox > ul > li .pulldown ul li dl {
+  width: 126px;
+  overflow: hidden;
+  float: left;
+  margin-left: 40px;
+}
+header .navMain .navMainBar .navMainBox > ul > li .pulldown ul li dl dt {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: #323232;
+  margin-bottom: 10px;
+  text-align: left;
+}
+header .navMain .navMainBar .navMainBox > ul > li .pulldown ul li dl dd {
+  width: 100%;
+  text-align: left;
+  top: 30px;
+}
+header .navMain .navMainBar .navMainBox > ul > li .pulldown ul li dl dd a {
+  line-height: 30px;
+  height: 30px;
+  font-size: 14px;
+  text-align: left;
+  display: block;
+  color: #5e5e5e;
+}
+header .navMain .navMainBar .navMainBox > ul > li .pulldown ul li dl dd a:hover {
+  color: #f52f3e;
+}
+header .navMain .navMainBar .searchBar {
+  float: left;
+  width: 190px;
+  height: 36px;
+  margin: 17px 0 0 20px;
+}
+header .navMain .navMainBar .searchBar .searchBox {
+  width: 190px;
+  height: 36px;
+  position: relative;
+}
+header .navMain .navMainBar .searchBar .searchBox input {
+  background: #fff;
+  color: #a5a5a5;
+  border-color: #fff;
+  opacity: .5;
+  width: 143px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 34px 0 10px;
+  border: 1px solid #e6e6e6;
+  transition: border 0.1s ease-in-out;
+  -webkit-transition: border 0.1s ease-in-out;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  outline: none;
+}
+header .navMain .navMainBar .searchBar .searchBox input:hover {
+  border: 1px solid #323232;
+}
+header .navMain .navMainBar .searchBar .searchBox input:focus {
+  border: 1px solid #ff5256;
+}
+header .navMain .navMainBar .searchBar .searchBox a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url(../img/search-bg.png) no-repeat;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+header .navMain .navMainBar .searchBar .searchBox a:hover {
+  background-position: 0 -34px;
+}
+header .navMain .navMainBar .users {
+  float: right;
+  padding-top: 17px;
+  position: relative;
+}
+header .navMain .navMainBar .users .usersBox {
+  width: 90px;
+  padding-left: 29px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  position: relative;
+}
+header .navMain .navMainBar .users .usersBox:hover {
+  background-color: #fff;
+}
+header .navMain .navMainBar .users .usersBox:hover a {
+  color: #5e5e5e!important;
+}
+header .navMain .navMainBar .users .usersBox .usersHeadPic {
+  background: url(../img/user-headpic.png) no-repeat 0 -16px;
+  position: absolute;
+  left: 9px;
+  top: 10px;
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+header .navMain .navMainBar .users .usersBox a {
+  transition: all 0.2s ease-in-out;
+  font-size: 14px;
+  color: #323232;
+  background: transparent;
+}
+header .navMain .navMainBar .users .usersBox .usersArrowPic {
+  background: url(../img/user-arrow.png) no-repeat;
+  position: absolute;
+  right: 11px;
+  top: 13px;
+  display: block;
+  width: 5px;
+  height: 9px;
+  background-position: 0 -104px;
+}
+header .subNav {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid #dddddd;
+  background-color: #fff;
+}
+header .subNav ul {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+}
+header .subNav ul li {
+  float: left;
+  height: 40px;
+}
+header .subNav ul li a {
+  display: block;
+  position: relative;
+  top: -1px;
+  margin: 0 10px;
+  height: 39px;
+  color: #323232;
+  font-size: 14px;
+  line-height: 39px;
+  border-top: 1px solid transparent;
+}
+header .subNav ul li a.current {
+  color: #f52f3e;
+  border-top: 1px solid #ea544a;
+}
+header .subNav ul li a:hover {
+  color: #f52f3e;
+}
+footer {
+  width: 100%;
+  background: #323232;
+  height: 85px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+footer .footerBox {
+  width: 1200px;
+  margin: 0 auto;
+}
+footer .footerBox .footerLeftBar {
+  float: left;
+  color: #b3b5ba;
+  font-family: Arial, '\5B8B\4F53';
+}
+footer .footerBox .footerLeftBar ul {
+  display: block;
+  padding: 5px 0 10px 0;
+}
+footer .footerBox .footerLeftBar ul li {
+  float: left;
+  padding-bottom: 15px;
+}
+footer .footerBox .footerLeftBar ul li a {
+  padding: 0 10px;
+  border-right: 1px solid #aaaaaa;
+  color: #b3b5ba;
+  transition: all 0.3s;
+}
+footer .footerBox .footerLeftBar ul li a:hover {
+  color: #fff;
+}
+footer .footerBox .footerLeftBar p {
+  text-indent: 10px;
+}
+footer .footerBox .footerLeftBar p span {
+  margin-left: 10px;
+  border-left: 1px solid #aaaaaa;
+  padding-left: 10px;
+}
+footer .footerBox .footerRightBar {
+  float: left;
+  padding-left: 20px;
+}
+footer .footerBox .footerRightBar dt {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #d0d0d0;
+}
+footer .footerBox .footerRightBar dd {
+  float: left;
+  padding-right: 15px;
+}
+footer .footerBox .footerRightBar dd a {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding-left: 25px;
+  background: url(../img/service.png) no-repeat;
+  opacity: .6;
+  filter: alpha(opacity=60);
+  color: #F3F3F3;
+}
+footer .footerBox .footerRightBar dd a:hover {
+  opacity: 1;
+}
+footer .footerBox .footerRightBar dd:nth-child(2) a {
+  background-position: 0 -2px;
+}
+footer .footerBox .footerRightBar dd:nth-child(3) a {
+  background-position: 0 -39px;
+}
+footer .footerBox .footerRightBar dd:nth-child(4) a {
+  background-position: 0 -73px;
+}
+.sideBar {
+  position: fixed;
+  right: 5px;
+  bottom: 25px;
+  z-index: 99999;
+}
+.sideBar li a.sidep1 {
+  background-position-x: 0px;
+}
+.sideBar li a.sidep2 {
+  background-position-x: -42px;
+}
+.sideBar li a.sidep3 {
+  background-position-x: -84px;
+}
+.sideBar li a.sidep4 {
+  background-position-x: -126px;
+}
+.sideBar li a.sidep5 {
+  background-position-x: -168px;
+}
+.sideBar li a.sidep6 {
+  background-position-x: -210px;
+}
+.sideBar li a.sidep7 {
+  background-position-x: -252px;
+}
+.sideBar li a.sidep8 {
+  background-position-x: -294px;
+}
+.sideBar li a.sidep9 {
+  background-position-x: -336px;
+}
+.sideBar li a.sidep10 {
+  background-position-x: -378px;
+}
+.sideBar li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 2px;
+  display: block;
+  position: relative;
+  background: url(../img/sidebar.gif) no-repeat #ea544a;
+  transition: 0.3s all;
+}
+.sideBar li a:hover {
+  background-position-y: -40px;
+}

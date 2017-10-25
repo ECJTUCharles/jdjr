@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东众筹平台-京东金融</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/zhongchou.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            $(".navMainBox").children().eq(0).children().children("a").hover(function() {
+                $(this).siblings(".pulldown").css("display", "block");
+            }, function() {
+                $(this).siblings(".pulldown").css("display", "none");
+            });
+            $(".pulldown").hover(function() {
+                $(this).css("display", "block");
+            }, function() {
+                $(this).css("display", "none");
+            });
+            $(window).on("scroll", function() {
+                var scrTop = $(window).scrollTop();
+                if (scrTop > 200) {
+                    if ($(".topBarFixed").length == 0) {
+                        $(".navMain").clone().addClass("topBarFixed").css({
+                            "background": "#fff",
+                            "position": "fixed",
+                            "top": 0,
+                            "z-index": "999",
+                            "width": "100%",
+                            "height": "55px",
+                            "overflow": "hidden"
+                        }).appendTo($("header"));
+                    }
+                } else {
+                    $(".topBarFixed").remove();
+                }
+            });
+            (function() {
+                var _index = 0;
+                var slider = null;
+                var sliderStart = function() {
+                    slider = setInterval(function() {
+                        _index = _index < 3 ? ++_index : _index = 0;
+                        $(".sliderBox div a").css("transform", "translateX(-" + _index + "00%)");
+                        $(".sliderList ul").children().eq(_index).addClass("active").siblings().removeClass("active");
+                        $(".bodyBg").css("background-image", "url(./img/zhongchou-slidebg" + (_index + 1) + ".jpg)");
+                    }, 5000);
+                };
+                sliderStart();
+                $(".slider>span").on("click", function() {
+                    clearInterval(slider);
+                    if ($(".slider span").index($(this))) {
+                        $(this).siblings(".sliderBox").children("div").children("a").css("transform", "translateX(-" + (_index < 3 ? ++_index : _index = 0) + "00%)");
+                    } else {
+                        $(this).siblings(".sliderBox").children("div").children("a").css("transform", "translateX(-" + (_index > 0 ? --_index : _index = 3) + "00%)");
+                    }
+                    $(".sliderList ul").children().eq(_index).addClass("active").siblings().removeClass("active");
+                    $(".bodyBg").css("background-image", "url(./img/zhongchou-slidebg" + (_index + 1) + ".jpg)");
+                });
+                $(".slider").hover(function() {
+                    clearInterval(slider);
+                }, function() {
+                    clearInterval(slider);
+                    sliderStart();
+                });
+                $(".sliderList ul li").on("click", function() {
+                    _index = $(".sliderList ul li").index($(this));
+                    $(this).addClass("active").siblings().removeClass("active")
+                    $(".sliderBox div a").css("transform", "translateX(-" + _index + "00%)");
+                    $(".bodyBg").css("background-image", "url(../img/zhongchou-slidebg" + (_index + 1) + ".jpg)");
+                })
+            })()
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div style="clear: both;width: 100%;"></div>
+        <div class="topNav">
+            <div class="topNavBox" style="width:1200px;">
+                <ul style="float:right;">
+                    <li><a href="javascript:void();">京东首页</a></li>
+                    <li><a href="javascript:void();">你好，请登录</a></li>
+                    <li><a href="javascript:void();">免费注册</a></li>
+                    <li><a href="javascript:void();">我的交易单</a></li>
+                    <li><a href="javascript:void();">会员中心<span></span></a></li>
+                    <li><a href="javascript:void();"><span></span>手机金融<span></span></a></li>
+                    <li><a href="javascript:void();">联系客服<span></span></a></li>
+                    <li><a href="javascript:void();">网站导航<span></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navMain">
+            <div class="navMainBar">
+                <div class="logo">
+                    <a href="javascript:void();"><img src="./img/logo-jr-r.png" alt=""></a>
+                </div>
+                <div class="navMainBox">
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./licai.html">理财</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>理财精选</dt>
+                                            <dd><a href="#">理财首页</a></dd>
+                                            <dd><a href="#">京东小金库</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>稳健理财</dt>
+                                            <dd><a href="#">定期理财</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>基金理财</dt>
+                                            <dd><a href="#">基金超市</a></dd>
+                                            <dd><a href="#">基金定投</a></dd>
+                                            <dd><a href="#">基智账户</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>特色理财</dt>
+                                            <dd><a href="#">京东黄金</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>投资讯息</dt>
+                                            <dd><a href="#">慧投策略</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/licai-img.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="current"><a href="#">众筹</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>产品众筹</dt>
+                                            <dd><a href="#">众筹优选</a></dd>
+                                            <dd><a href="#">发起项目</a></dd>
+                                            <dd><a href="#">轻众筹</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>众筹分类</dt>
+                                            <dd><a href="#">科技</a><a href="#">家电</a></dd>
+                                            <dd><a href="#">美食</a><a href="#">美学</a></dd>
+                                            <dd><a href="#">文化</a><a href="#">扶贫</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>东家</dt>
+                                            <dd><a href="#">东家精选</a></dd>
+                                            <dd><a href="#">我要投资</a></dd>
+                                            <dd><a href="#">东家社区</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>互动尝鲜</dt>
+                                            <dd><a href="#">众筹社区</a></dd>
+                                            <dd><a href="#">0元测评</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>众创生态</dt>
+                                            <dd><a href="#">京东投创</a></dd>
+                                            <dd><a href="#">创业服务</a></dd>
+                                            <dd><a href="#">众创学院</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/zhongchou-img.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/baoxian.html">保险</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>保险精选</dt>
+                                            <dd><a href="#">保险首页</a></dd>
+                                            <dd><a href="#">车险首页</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>车险</dt>
+                                            <dd><a href="#">人保车险</a></dd>
+                                            <dd><a href="#">阳光车险</a></dd>
+                                            <dd><a href="#">中华车险</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>意外</dt>
+                                            <dd><a href="#">交通</a></dd>
+                                            <dd><a href="#">综合</a></dd>
+                                            <dd><a href="#">运动</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>旅行</dt>
+                                            <dd><a href="#">境内</a></dd>
+                                            <dd><a href="#">境外</a></dd>
+                                            <dd><a href="#">申报</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>健康</dt>
+                                            <dd><a href="#">重大疾病</a></dd>
+                                            <dd><a href="#">医疗费用</a></dd>
+                                            <dd><a href="#">防癌保障</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>财产</dt>
+                                            <dd><a href="#">家财</a></dd>
+                                            <dd><a href="#">责任</a></dd>
+                                            <dd><a href="#">创新</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>人寿</dt>
+                                            <dd><a href="#">养老储蓄</a></dd>
+                                            <dd><a href="#">教育储蓄</a></dd>
+                                            <dd><a href="#">定期寿险</a></dd>
+                                        </dl>
+                                    </li>
+                                    <!-- <li> -->
+                                    <!-- <a href="#"><img src="./img/baoxian-img.jpg" alt=""></a> -->
+                                    <!-- </li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/baitiao.html">白条</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>购物打白条</dt>
+                                            <dd><a href="#">白条</a></dd>
+                                            <dd><a href="#">白条优惠</a></dd>
+                                            <dd><a href="#">白条还款</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>生活打白条</dt>
+                                            <dd><a href="#">买房</a><a href="#">旅游</a></dd>
+                                            <dd><a href="#">租房</a></dd>
+                                            <dd><a href="#">买房装修</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>信用服务</dt>
+                                            <dd><a href="#">小白信用</a></dd>
+                                            <dd><a href="#">白条联名卡</a></dd>
+                                            <dd><a href="#">京东钢镚</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>个人/企业服务</dt>
+                                            <dd><a href="#">金条</a></dd>
+                                            <dd><a href="#">抵质押贷</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>校园金融</dt>
+                                            <dd><a href="#">校园特权</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>农村金融</dt>
+                                            <dd><a href="#">乡村白条</a></dd>
+                                            <dd><a href="#">京农贷</a></dd>
+                                        </dl>
+                                    </li>
+                                    <!-- <li> -->
+                                    <!-- <a href="#"><img src="./img/baoxian-img.jpg" alt=""></a> -->
+                                    <!-- </li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/qiyejinrong.html">企业金融</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>企业中心</dt>
+                                            <dd><a href="#">企业金融介绍</a></dd>
+                                            <dd><a href="#">企业金融服务</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>企业融资</dt>
+                                            <dd><a href="#">京保贝</a><a href="#">京小贷</a></dd>
+                                            <dd><a href="#">动产融资</a><a href="#">企业金采</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>企业理财</dt>
+                                            <dd><a href="#">企业金库</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>企业征信</dt>
+                                            <dd><a href="#">蓝鲸征信</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>客服中心</dt>
+                                            <dd><a href="#">常见问题</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/qiyejinrong-img.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./gupiao.html">股票</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>炒股工具</dt>
+                                            <dd><a href="#">APP下载<span></span></a></dd>
+                                            <dd><a href="#">极速开户<span></span></a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>特色功能</dt>
+                                            <dd><a href="#">实时资讯</a></dd>
+                                            <dd><a href="#">发现牛人</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>量化交易</dt>
+                                            <dd><a href="#">量化平台</a></dd>
+                                            <dd><a href="#">策略榜</a></dd>
+                                            <dd><a href="#">量化社区</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/gupiao-img1.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/gupiao-img2.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/dongjiacaifu.html">东家财富<span class="icon"><img src="./img/nav-new.gif" alt=""></span></a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>东家财富</dt>
+                                            <dd><a href="#">类固收<span></span></a></dd>
+                                            <dd><a href="#">私募股权<span></span></a></dd>
+                                            <dd><a href="#">阳光私募<span></span></a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>东家海外</dt>
+                                            <dd><a href="#">海外移民</a></dd>
+                                            <dd><a href="#">海外留学</a></dd>
+                                            <dd><a href="#">海外置业</a></dd>
+                                            <dd><a href="#">海外求职</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/dongjiacaifu-img1.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/dongjiacaifu-img2.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchBar">
+                    <div class="searchBox">
+                        <input type="text" placeholder="抢一亿红包">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="users">
+                    <div class="usersBox">
+                        <span class="usersHeadPic"></span>
+                        <a href="#">我的资产</a>
+                        <span class="usersArrowPic"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subNav">
+            <ul>
+                <li><a href="#" class="current">产品众筹</a></li>
+                <li><a href="#">轻众筹</a></li>
+                <li><a href="#">0元测评</a></li>
+                <li><a href="#">众筹社区</a></li>
+                <li><a href="#">发起众筹</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="bodyBg">
+        </div>
+        <div class="tab1" style="">
+            <div class="slider">
+                <span></span>
+                <span></span>
+                <div class="sliderList">
+                    <ul>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="sliderBox sliderBox1">
+                    <div>
+                        <a href="#"><img src="./img/zhongchou-slider1-1.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider1-2.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider1-3.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider1-4.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="sliderBox sliderBox2">
+                    <div>
+                        <a href="#"><img src="./img/zhongchou-slider2-1.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider2-2.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider2-3.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider2-4.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="sliderBox sliderBox3">
+                    <div>
+                        <a href="#"><img src="./img/zhongchou-slider3-1.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider3-2.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider3-3.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider3-4.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="sliderBox sliderBox4">
+                    <div>
+                        <a href="#"><img src="./img/zhongchou-slider4-1.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider4-2.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider4-3.jpg" alt=""></a>
+                        <a href="#"><img src="./img/zhongchou-slider4-4.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="showBar">
+                <ul>
+                    <li>
+                        <p>511197<span>万</span></p>
+                        <p><span></span>累计支持金额</p>
+                    </li>
+                    <li>
+                        <p>10113<span>万</span></p>
+                        <p><span></span>单项最高筹集金额</p>
+                    </li>
+                    <li>
+                        <p>37.4<span>万</span></p>
+                        <p><span></span>单项最高支持人数</p>
+                    </li>
+                </ul>
+                <div class="showSearch">
+                    <p class="showSearchBox">
+                        <select>
+                            <option value="全部">全部</option>
+                            <option value="科技">科技</option>
+                            <option value="美食">美食</option>
+                            <option value="家电">家电</option>
+                            <option value="设计">设计</option>
+                            <option value="娱乐">娱乐</option>
+                            <option value="出版">出版</option>
+                            <option value="公益">公益</option>
+                            <option value="其他">其他</option>
+                        </select>
+                        <input type="text" maxlength="35" placeholder="请输入关键词">
+                        <a></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="tab2">
+            <dl>
+                <dt><span>热门推荐</span><a href="#">更多></a></dt>
+
+                <dd>
+                    <a href="#">
+                        <span>爆品</span>
+                        <img src="./img/zhongchou-tab2-p1.jpg" alt="" class="hover-scale">
+                        <p>鹃城郫县豆瓣·香菇即食新品</p>
+                        <p>已筹￥72792</p>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <span>爆品</span>
+                        <img src="./img/zhongchou-tab2-p2.jpg" alt="" class="hover-scale">
+                        <p>免带线更社交 大灯充电宝</p>
+                        <p>已筹￥103852</p>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <span>爆品</span>
+                        <img src="./img/zhongchou-tab2-p3.jpg" alt="" class="hover-scale">
+                        <p>可赞纳米多功能车车漆复擦布</p>
+                        <p>已筹￥101070</p>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <span>爆品</span>
+                        <img src="./img/zhongchou-tab2-p4.jpg" alt="" class="hover-scale">
+                        <p>1鞋3穿 黑科技超感套装鞋</p>
+                        <p>已筹￥1561096</p>
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <div class="showTab tab3">
+            <span></span>
+            <span></span>
+            <dl>
+                <dt>
+                    <ul>
+                        <li><a href="#" class="current">最新上架</a></li>
+                        <li><a href="#">即将结束</a></li>
+                    </ul>
+                    <a href="#">查看更多 ></a>
+                </dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p1.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                                <p>通过变频解决电动牙刷振动大小，适合各种牙龈，各种季节</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>已筹</span><span>￥2659</span></p>
+                                <p><span>超值档位</span><span>￥19</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p2.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>托普果园 库尔勒多汁香梨</p>
+                                <p>产自北纬41° 东经86°的色泽悦目、皮薄肉细、酥脆爽口、香气浓郁、汁多渣少、营养丰富、耐久贮藏的梨中珍品。</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>目标</span><span>￥50000</span></p>
+                                <p><span>超值档位</span><span>￥35</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p3.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>穿时尚百搭卫衣，活出青春饭</p>
+                                <p>通过变频解决电动牙刷振动大小，适合各种牙龈，各种季节</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>目标</span><span>￥50000</span></p>
+                                <p><span>超值档位</span><span>￥98</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p4.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                                <p>通过变频解决电动牙刷振动大小，适合各种牙龈，各种季节</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>目标</span><span>￥100000</span></p>
+                                <p><span>超值档位</span><span>￥39</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p5.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                                <p>通过变频解决电动牙刷振动大小，适合各种牙龈，各种季节</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>目标</span><span>￥100000</span></p>
+                                <p><span>超值档位</span><span>￥39</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p6.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                                <p>通过变频解决电动牙刷振动大小，适合各种牙龈，各种季节</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>目标</span><span>￥100000</span></p>
+                                <p><span>超值档位</span><span>￥39</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p7.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                                <p>通过变频解决电动牙刷振动大小，适合各种牙龈，各种季节</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>目标</span><span>￥100000</span></p>
+                                <p><span>超值档位</span><span>￥39</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                                <p>通过变频解决电动牙刷振动大小，适合各种牙龈，各种季节</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <p><span>目标</span><span>￥100000</span></p>
+                                <p><span>超值档位</span><span>￥39</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="showTab showTab2 tab4">
+            <span></span>
+            <span></span>
+            <dl>
+                <dt>
+                    <ul>
+                        <li><a href="#" class="current">精品推荐</a></li>
+                        <li><a href="#">极客潮品</a></li>
+                        <li><a href="#">智能家居</a></li>
+                    </ul>
+                    <a href="#"><span>1F</span>新奇酷玩</a>
+                </dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab4-p1.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <p><span>已达216%</span><span>已筹￥215512元</span></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="showTab showTab2 tab5">
+            <span></span>
+            <span></span>
+            <dl>
+                <dt>
+                    <ul>
+                        <li><a href="#" class="current">精品推荐</a></li>
+                        <li><a href="#">极客潮品</a></li>
+                        <li><a href="#">智能家居</a></li>
+                    </ul>
+                    <a href="#"><span>2F</span>健康出行</a>
+                </dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab5-p1.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <p class="proBar"><span></span></p>
+                            <p><span>已达216%</span><span>已筹￥215512元</span></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/zhongchou-tab3-p8.jpg" alt="" class="hover-scale"></a>
+                            <a href="#">
+                                <p>索纳斯声波变频电动牙刷</p>
+                            </a>
+                            <ul class="tag">
+                                <li><a href="#">健身装备</a></li>
+                                <li><a href="#">玩具</a></li>
+                            </ul>
+                            <p class="proBar"><span></span></p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <p>1386%</p>
+                                        <p>已达</p>
+                                    </li>
+                                    <li>
+                                        <p>￥1386143</p>
+                                        <p>已筹</p>
+                                    </li>
+                                    <li>
+                                        <p>2天</p>
+                                        <p>剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="sideBar">
+        <ul>
+            <li>
+                <a href="#" class="sidep5"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep9"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep7"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep1"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep3"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep2"></a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footerBox">
+
+            <div class="footerLeftBar">
+                <ul>
+                    <li><a href="#">关于京东金融</a></li>
+                    <li><a href="#">关于京东小金库</a></li>
+                    <li><a href="#">关于京东白条</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">经营证照</a></li>
+                    <li><a href="#">金融联盟</a></li>
+                    <li><a href="#">平台协议</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+                <p class="copyright">
+                    Copyright © 2004-2017 京东JD.com 版权所有
+                    <span>投资有风险，购买需谨慎</span>
+                </p>
+            </div>
+            <div class="footerRightBar">
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="#"><span></span>24小时专属客服</a></dd>
+                    <dd><a href="#"><span></span>在线客服</a></dd>
+                    <dd><a href="#"><span></span>客服邮箱</a></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

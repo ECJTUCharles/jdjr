@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东金融</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            $(".navMainBox").children().eq(0).children().children("a").hover(function() {
+                $(this).siblings(".pulldown").css("display", "block");
+            }, function() {
+                $(this).siblings(".pulldown").css("display", "none");
+            });
+            $(".pulldown").hover(function() {
+                $(this).css("display", "block");
+            }, function() {
+                $(this).css("display", "none");
+            });
+            $(".topBanner a span").on("click", function() {
+                $(".topBanner").css("display", "none");
+            });
+            $(window).on("scroll", function() {
+                var scrTop = $(window).scrollTop();
+                if ($(window).scrollTop() > 700 && $(window).scrollTop() < 2100) {
+                    $(".tab2Bg").css("background-position", "0 " + (-(scrTop - 700) / 4) + "px");
+                }
+                if (scrTop > 200) {
+                    if ($(".topBarFixed").length == 0) {
+                        $(".navMain").clone().addClass("topBarFixed").css({
+                            "background": "#fff",
+                            "position": "fixed",
+                            "top": 0,
+                            "z-index": "999",
+                            "width": "100%",
+                            "height": "55px",
+                            "overflow": "hidden"
+                        }).appendTo($("header"));
+                    }
+                } else {
+                    $(".topBarFixed").remove();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="topBanner">
+            <a href="javascript:void();">
+                <span></span>
+            </a>
+        </div>
+        <div style="clear: both;width: 100%;"></div>
+        <div class="topNav">
+            <div class="topNavBox" style="width:1200px;">
+                <ul style="float:right;">
+                    <li><a href="javascript:void();">京东首页</a></li>
+                    <li><a href="javascript:void();">你好，请登录</a></li>
+                    <li><a href="javascript:void();">免费注册</a></li>
+                    <li><a href="javascript:void();">我的交易单</a></li>
+                    <li><a href="javascript:void();">会员中心<span></span></a></li>
+                    <li><a href="javascript:void();"><span></span>手机金融<span></span></a></li>
+                    <li><a href="javascript:void();">联系客服<span></span></a></li>
+                    <li><a href="javascript:void();">网站导航<span></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navMain">
+            <div class="navMainBar">
+                <div class="logo">
+                    <a href="javascript:void();"><img src="./img/logo-jr-w.png" alt=""></a>
+                </div>
+                <div class="navMainBox">
+                    <ul>
+                        <li class="current"><a href="./index.html">首页</a></li>
+                        <li><a href="./licai.html">理财</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>理财精选</dt>
+                                            <dd><a href="#">理财首页</a></dd>
+                                            <dd><a href="#">京东小金库</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>稳健理财</dt>
+                                            <dd><a href="#">定期理财</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>基金理财</dt>
+                                            <dd><a href="#">基金超市</a></dd>
+                                            <dd><a href="#">基金定投</a></dd>
+                                            <dd><a href="#">基智账户</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>特色理财</dt>
+                                            <dd><a href="#">京东黄金</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>投资讯息</dt>
+                                            <dd><a href="#">慧投策略</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/licai-img.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./zhongchou.html">众筹</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>产品众筹</dt>
+                                            <dd><a href="#">众筹优选</a></dd>
+                                            <dd><a href="#">发起项目</a></dd>
+                                            <dd><a href="#">轻众筹</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>众筹分类</dt>
+                                            <dd><a href="#">科技</a><a href="#">家电</a></dd>
+                                            <dd><a href="#">美食</a><a href="#">美学</a></dd>
+                                            <dd><a href="#">文化</a><a href="#">扶贫</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>东家</dt>
+                                            <dd><a href="#">东家精选</a></dd>
+                                            <dd><a href="#">我要投资</a></dd>
+                                            <dd><a href="#">东家社区</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>互动尝鲜</dt>
+                                            <dd><a href="#">众筹社区</a></dd>
+                                            <dd><a href="#">0元测评</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>众创生态</dt>
+                                            <dd><a href="#">京东投创</a></dd>
+                                            <dd><a href="#">创业服务</a></dd>
+                                            <dd><a href="#">众创学院</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/zhongchou-img.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/baoxian.html">保险</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>保险精选</dt>
+                                            <dd><a href="#">保险首页</a></dd>
+                                            <dd><a href="#">车险首页</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>车险</dt>
+                                            <dd><a href="#">人保车险</a></dd>
+                                            <dd><a href="#">阳光车险</a></dd>
+                                            <dd><a href="#">中华车险</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>意外</dt>
+                                            <dd><a href="#">交通</a></dd>
+                                            <dd><a href="#">综合</a></dd>
+                                            <dd><a href="#">运动</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>旅行</dt>
+                                            <dd><a href="#">境内</a></dd>
+                                            <dd><a href="#">境外</a></dd>
+                                            <dd><a href="#">申报</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>健康</dt>
+                                            <dd><a href="#">重大疾病</a></dd>
+                                            <dd><a href="#">医疗费用</a></dd>
+                                            <dd><a href="#">防癌保障</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>财产</dt>
+                                            <dd><a href="#">家财</a></dd>
+                                            <dd><a href="#">责任</a></dd>
+                                            <dd><a href="#">创新</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>人寿</dt>
+                                            <dd><a href="#">养老储蓄</a></dd>
+                                            <dd><a href="#">教育储蓄</a></dd>
+                                            <dd><a href="#">定期寿险</a></dd>
+                                        </dl>
+                                    </li>
+                                    <!-- <li> -->
+                                    <!-- <a href="#"><img src="./img/baoxian-img.jpg" alt=""></a> -->
+                                    <!-- </li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/baitiao.html">白条</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>购物打白条</dt>
+                                            <dd><a href="#">白条</a></dd>
+                                            <dd><a href="#">白条优惠</a></dd>
+                                            <dd><a href="#">白条还款</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>生活打白条</dt>
+                                            <dd><a href="#">买房</a><a href="#">旅游</a></dd>
+                                            <dd><a href="#">租房</a></dd>
+                                            <dd><a href="#">买房装修</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>信用服务</dt>
+                                            <dd><a href="#">小白信用</a></dd>
+                                            <dd><a href="#">白条联名卡</a></dd>
+                                            <dd><a href="#">京东钢镚</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>个人/企业服务</dt>
+                                            <dd><a href="#">金条</a></dd>
+                                            <dd><a href="#">抵质押贷</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>校园金融</dt>
+                                            <dd><a href="#">校园特权</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>农村金融</dt>
+                                            <dd><a href="#">乡村白条</a></dd>
+                                            <dd><a href="#">京农贷</a></dd>
+                                        </dl>
+                                    </li>
+                                    <!-- <li> -->
+                                    <!-- <a href="#"><img src="./img/baoxian-img.jpg" alt=""></a> -->
+                                    <!-- </li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/qiyejinrong.html">企业金融</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>企业中心</dt>
+                                            <dd><a href="#">企业金融介绍</a></dd>
+                                            <dd><a href="#">企业金融服务</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>企业融资</dt>
+                                            <dd><a href="#">京保贝</a><a href="#">京小贷</a></dd>
+                                            <dd><a href="#">动产融资</a><a href="#">企业金采</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>企业理财</dt>
+                                            <dd><a href="#">企业金库</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>企业征信</dt>
+                                            <dd><a href="#">蓝鲸征信</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>客服中心</dt>
+                                            <dd><a href="#">常见问题</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/qiyejinrong-img.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./gupiao.html">股票</a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>炒股工具</dt>
+                                            <dd><a href="#">APP下载<span></span></a></dd>
+                                            <dd><a href="#">极速开户<span></span></a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>特色功能</dt>
+                                            <dd><a href="#">实时资讯</a></dd>
+                                            <dd><a href="#">发现牛人</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>量化交易</dt>
+                                            <dd><a href="#">量化平台</a></dd>
+                                            <dd><a href="#">策略榜</a></dd>
+                                            <dd><a href="#">量化社区</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/gupiao-img1.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/gupiao-img2.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./view/dongjiacaifu.html">东家财富<span class="icon"><img src="./img/nav-new.gif" alt=""></span></a>
+                            <div class="pulldown">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>东家财富</dt>
+                                            <dd><a href="#">类固收<span></span></a></dd>
+                                            <dd><a href="#">私募股权<span></span></a></dd>
+                                            <dd><a href="#">阳光私募<span></span></a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>东家海外</dt>
+                                            <dd><a href="#">海外移民</a></dd>
+                                            <dd><a href="#">海外留学</a></dd>
+                                            <dd><a href="#">海外置业</a></dd>
+                                            <dd><a href="#">海外求职</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/dongjiacaifu-img1.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./img/dongjiacaifu-img2.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchBar">
+                    <div class="searchBox">
+                        <input type="text" placeholder="抢一亿红包">
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="users">
+                    <div class="usersBox">
+                        <span class="usersHeadPic"></span>
+                        <a href="#">我的资产</a>
+                        <span class="usersArrowPic"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="bodyBg"></div>
+        <div class="mainBanner" style="width: 1200px;margin: 0 auto;">
+            <div class="leftBar">
+                <div class="giftPic hover-toon">
+                    <img src="./img/xiazaiapp.png" alt="">
+                </div>
+                <div class="leftBarBg"></div>
+                <div class="leftBarMenu">
+                    <ul>
+                        <li>
+                            <dl class="hover-toright">
+                                <dt><a href="#">稳健理财</a></dt>
+                                <dd><a href="#">京东小金库</a></dd>
+                                <dd><a href="#">定期理财</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="hover-toright">
+                                <dt><a href="#">进阶理财</a></dt>
+                                <dd><a href="#">基金</a></dd>
+                                <dd><a href="#">股票</a></dd>
+                                <dd><a href="#">东家财富</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="hover-toright">
+                                <dt><a href="#">信用生活</a></dt>
+                                <dd><a href="#">白条</a></dd>
+                                <dd><a href="#">白条闪付</a></dd>
+                                <dd><a href="#">金条</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="hover-toright">
+                                <dt><a href="#">好物优选</a></dt>
+                                <dd><a href="#">科技</a></dd>
+                                <dd><a href="#">设计</a></dd>
+                                <dd><a href="#">文化</a></dd>
+                                <dd><a href="#">公益</a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="hover-toright">
+                                <dt><a href="#">保障服务</a></dt>
+                                <dd><a href="#">车险</a></dd>
+                                <dd><a href="#">意外险</a></dd>
+                                <dd><a href="#">财产险</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="middleBar">
+                <div class="slider">
+                    <div class="sliderBox">
+                        <a href="#"><img src="./img/slider1.jpg" alt=""></a>
+                        <a href="#"><img src="./img/slider2.jpg" alt=""></a>
+                        <a href="#"><img src="./img/slider3.jpg" alt=""></a>
+                        <a href="#"><img src="./img/slider4.jpg" alt=""></a>
+                    </div>
+                    <span><</span>
+                    <span>></span>
+                    <div class="sliderList">
+                        <ul>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="adBar1">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/adpic1.jpg" alt="">
+                                <dl>
+                                    <dt>12期免息</dt>
+                                    <dd>手机新品轻松享</dd>
+                                    <dd>IN货推荐</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/adpic2.jpg" alt="">
+                                <dl>
+                                    <dt>低息借贷</dt>
+                                    <dd>最高可借20万</dd>
+                                    <dd>极速到账</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/adpic3.jpg" alt="">
+                                <dl>
+                                    <dt>立省400</dt>
+                                    <dd>运动智能手表</dd>
+                                    <dd>极客潮科技</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightBar">
+                <div class="rightBarTop">
+                    <a href="#"><span>每日签到</span></a>
+                    <div class="loginBar">
+                        <a href="#">
+                            <img src="./img/loginpic.png" alt="">
+                            <dl>
+                                <dt>HI,欢迎回来</dt>
+                                <dd>登录京东账号></dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="adBar2">
+                        <a href="#" class="hover-toon"><img src="./img/rightbarpic1.png" alt=""></a>
+                        <a href="#" class="hover-toon"><img src="./img/rightbarpic2.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="rightBarBottom">
+                    <div class="rightBarMenu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>我的优惠</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>我的金库</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>换钢镚</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>金币商城</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>金条</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>Go返利</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>小白信用</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>0元试用</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>我的优惠</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>我的金库</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>换钢镚</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>金币商城</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>金条</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>Go返利</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>小白信用</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt></dt>
+                                        <dd>0元试用</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab1">
+            <div class="tab1Top">
+                <dl>
+                    <dt><a href="#"><img src="./img/tab1pic1.png" alt=""></a></dt>
+                    <dd><a href="#"><span></span>全民有钱，抢一亿红包</a></dd>
+                    <dd><a href="#"><span></span>不用洗洁精的盘子</a></dd>
+                    <dd><a href="#"><span></span>满10减9五六日用平安卡</a></dd>
+                    <dd><a href="#">领128元优惠券</a></dd>
+                </dl>
+            </div>
+            <div class="tab1Main">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>会员特权<span>比你更爱你自己</span></dt>
+                            <dd>
+                                <div class="hover-toon">
+                                    <h3>MEMBER</h3>
+                                    <p>金融会员</p>
+                                    <span>查看特权</span>
+                                </div>
+                                <a href="#"><span>【福利】</span>会员10金币兑换专车券</a>
+                                <a href="#"><span>【活动】</span>做任务最高得1000金币</a>
+                            </dd>
+                            <dd><a href="#">查看更多</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>会员任务<span>完成一个赚一个</span></dt>
+                            <dd>
+                                <ul>
+                                    <li class="hover-toright">
+                                        <a href="#">
+                                            <img src="./img/tab1icon.png" alt=""> 首次开通小金库
+                                            <p>+100金币</p>
+                                        </a>
+                                    </li>
+                                    <li class="hover-toright">
+                                        <a href="#">
+                                            <img src="./img/tab1icon2.png" alt=""> 每月打白条6次
+                                            <p>+200金币</p>
+                                        </a>
+                                    </li>
+                                    <li class="hover-toright">
+                                        <a href="#">
+                                            <img src="./img/tab1icon3.png" alt=""> 首次开通京东白条
+                                            <p>+百元礼包+50金币</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#">查看更多</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>会员收益榜<span>跟着牛人学赚钱</span></dt>
+                            <dd>
+                                <ul>
+                                    <li class="hover-toon">
+                                        <h5>昨日狂赚</h5>
+                                        <p>1210.93</p>
+                                        <div>
+                                            <img src="./img/tab1icon4.jpg" alt="">
+                                        </div>
+                                        <a href="#">查看TA持仓</a>
+                                    </li>
+                                    <li class="hover-toon">
+                                        <h5>昨日狂赚</h5>
+                                        <p>1234.56</p>
+                                        <div>
+                                            <img src="./img/tab1icon5.jpg" alt="">
+                                        </div>
+                                        <a href="#">查看TA持仓</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#">PK收益</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+                <div class="erweima"></div>
+                <div class="tab1Bottom">
+                    <dl>
+                        <dt>
+                            <h3>优惠券中心</h3>
+                            <h5>一大波优惠券来袭</h5>
+                            <a href="#">领取更多优惠</a>
+                        </dt>
+                        <dd>
+                            <div>
+                                <a href="#" class="hover-toon">
+                                    <h3>￥5</h3>
+                                    <h4>众筹全品类满99减5元</h4>
+                                    <h5>每人限领一张</h5>
+                                </a>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div>
+                                <a href="#" class="hover-toon">
+                                    <h3>￥3</h3>
+                                    <h4>小金库话费满29减5元</h4>
+                                    <h5>新手专享</h5>
+                                </a>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div>
+                                <a href="#" class="hover-toon">
+                                    <h3>￥3</h3>
+                                    <h4>小金库支付满30元减3元</h4>
+                                    <h5>每人限领一张</h5>
+                                </a>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div>
+                                <a href="#" class="hover-toon">
+                                    <h3>￥2</h3>
+                                    <h4>小金库满10减2元</h4>
+                                    <h5>每人限领一张</h5>
+                                </a>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab2">
+            <div class="tab2Bg"></div>
+            <div class="tab2Main">
+                <div class="tab2MainLeftBar">
+                    <a href="#">
+                        <p>开始赚钱</p>
+                        <p>收益日结 随用随取</p>
+                    </a>
+                </div>
+                <div class="tab2MainMidBar">
+                    <p>京东小金库</p>
+                    <p>近七日年化</p>
+                    <p>4.4550<span>%</span></p>
+                    <p>转入<input type="text" value="10000">元</p>
+                    <p>预期每日收益<span>1.22</span>元</p>
+                    <a href="#">立即转入</a>
+                    <p>天天有收益，可消费可理财</p>
+                    <p>已为3000万+用户提供服务</p>
+                </div>
+                <div class="tab2MainRightBar">
+                    <dl>
+                        <dt>小金库买理财<span>新金库可大额买理财 操作更方便</span></dt>
+                        <dd>
+                            <ul>
+                                <li class="active">热销</li>
+                                <li>定期理财</li>
+                                <li>基金理财</li>
+                                <li>特色理财</li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li class="hover-toright">
+                                            <a href="#">
+                                                <p>5.50%</p>
+                                                <p>历史年化结算利率</p>
+                                            </a>
+                                            <a href="#">5年</a>
+                                            <a href="#">京渤随享盈</a>
+                                        </li>
+                                        <li class="hover-toright">
+                                            <a href="#">
+                                                <p>5.00%</p>
+                                                <p>历史年化投资回报率</p>
+                                            </a>
+                                            <a href="#">1年</a>
+                                            <a href="#">京华年年盈</a>
+                                        </li>
+                                        <li class="hover-toright">
+                                            <a href="#">
+                                                <p>13.59%</p>
+                                                <p>近一年涨幅</p>
+                                            </a>
+                                            <a href="#">中风险</a>
+                                            <a href="#">兴全趋势投资混合...</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li style="display: none;"></li>
+                                <li style="display: none;"></li>
+                                <li style="display: none;"></li>
+                            </ul>
+                        </dd>
+                        <dd><a href="#">查看更多</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sideBar">
+        <ul>
+            <li>
+                <a href="#" class="sidep5"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep9"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep7"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep1"></a>
+            </li>
+            <li>
+                <a href="#" class="sidep2"></a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footerBox">
+
+            <div class="footerLeftBar">
+                <ul>
+                    <li><a href="#">关于京东金融</a></li>
+                    <li><a href="#">关于京东小金库</a></li>
+                    <li><a href="#">关于京东白条</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">经营证照</a></li>
+                    <li><a href="#">金融联盟</a></li>
+                    <li><a href="#">平台协议</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+                <p class="copyright">
+                    Copyright © 2004-2017 京东JD.com 版权所有
+                    <span>投资有风险，购买需谨慎</span>
+                </p>
+            </div>
+            <div class="footerRightBar">
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="#"><span></span>24小时专属客服</a></dd>
+                    <dd><a href="#"><span></span>在线客服</a></dd>
+                    <dd><a href="#"><span></span>客服邮箱</a></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

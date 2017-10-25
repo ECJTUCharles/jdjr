@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial,"Microsoft Yahei","微软雅黑","Hiragino Sans GB","宋体";
+}
+.incrance-bill .in-bil .insurance-list li .liji-btn {
+    display: block;
+    width: 192px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    background: #fd7045;
+    margin-top: 15px;
+}
+.content{
+    width: 100%;
+    // height: 430px;
+    background-color: #F9F9F9;
+    .content-bg{
+        width: 100%;
+        .slide{
+            width: 100%;
+            height: 430px;
+            position: relative;
+            z-index: 1;
+            a{
+                width: 100%;
+                height: 430px;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+            .content{
+                width: 1200px;
+                height: 430px;  
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                .left{
+                    width: 280px;
+                    height: 100%;
+                    background-color: #166562;
+                    z-index: 5;
+                    float: left;
+                }
+                .right{
+                    width: 220px;
+                    height: 100%;
+                    background-color: #999;
+                    z-index: 5;
+                    float: right;
+                } 
+            }
+        }
+    }
+    .hot-protection{
+        width: 1200px;
+        height: 400px;
+        overflow: hidden;
+        margin: 0 auto;
+        // background-color: pink;
+        padding-top: 40px;
+        .hot-title{
+            width: 100%;
+            height: 30px;
+            margin-bottom:30px;
+            text-align: center;
+            font-family: Arial,"Microsoft Yahei","Hiragino Sans GB";
+            .le-t{
+                display: inline-block;
+                width: 101px;
+                height: 7px;
+                background-position: 0 -5236px;
+                position: relative;
+                top: -4px;   
+                background-image: url(../img/s-sd35d9523f1.png);
+                background-repeat: no-repeat;
+            }
+            .hot-text{
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0 23px;
+                color: #323232;
+            }
+            .dian{
+                margin: 0 5px;
+                font-size: 24px;
+                font-weight: 400;
+            }
+            .yingwen{
+                position: relative;
+                top: -2px;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            .ri-t{
+                display: inline-block;
+                width: 100px;
+                height: 7px;
+                background-position: 0 -5355px;
+                position: relative;
+                top: -4px;
+                background-image: url(../img/s-sd35d9523f1.png);
+                background-repeat: no-repeat;
+            }
+        }
+        .bao{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            .up-slide{
+                width: 280px;
+                height: 100%;
+                // background-color: red;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: space-between;
+                    .need{
+                        position: absolute;
+                        top: -150px;
+                        width: 40px;
+                        height: 40px;
+                        // background-color: #FD7045;
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: #fff;
+                    }
+                    .baise{
+                        width: 100%;
+                        overflow: hidden;
+                        background-color: #fff;
+                        position: absolute;
+                        top: -100px;
+                        .zhe-zhao{
+                            width: 280px;
+                            height: 100%;
+                            background-color: #000;
+                            opacity: 0.8;
+                        }
+                        a{
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            background: #000;
+                            filter: alpha(Opacity=0);
+                            opacity: 0.5;//一开始为0 
+                            transition: .6s all ease-in;
+                        }
+                        .zhe-text{
+                            width: 250px;
+                            position: absolute;
+                            bottom: -105px;
+                            left: 0;
+                            padding: 15px;
+                            height: 155px;
+                            overflow: hidden;
+                            text-align: center;
+                            background-color: #fff;
+                            z-index: 11;
+                            transition: all .3s ease-in-out;
+                            .jiao-tong{
+                                    font-size: 16px;
+                                    color: #323232;
+                                    display: inline-block;
+                                    margin-bottom: 8px;
+                                    position:absolute;
+                                    top: 0;
+                            }
+                            .num{
+                                display: block;
+                                font-weight: 700;
+                                font-size: 22px;
+                                color: #ff5e2d;
+                                .small{
+                                    font-size: 13px;
+                                }
+                                .qi{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+            div:nth-child(4){
+                width: 280px;
+                height: 100%;  
+                display: flex;
+                flex-direction:column;
+                justify-content: space-between;
+                .top-slide{
+                    width: 100%;
+                    height: 145px; 
+                    background-color: #FCD962;
+                }
+                .bottom-slide{
+                    width: 100%;
+                    height: 145px;                 
+                    background-color: #C9E384;
+                }
+            }
+        }
+    }
+    .incrance-bill{
+        position: relative;
+        margin-top: 70px;
+        width: 100%;
+        height: 436px;
+        padding-top: 60px;
+        background: url(../img/ye-jing.png) center center no-repeat;
+        .rance-title{
+            color: #eee;
+            width: 100%;
+            height: 30px;
+            margin-bottom:30px;
+            text-align: center;
+            font-family: Arial,"Microsoft Yahei","Hiragino Sans GB"; 
+            .ye-l{
+                display: inline-block;
+                width: 101px;
+                height: 7px;
+                position: relative;
+                top: -4px;   
+                background-image: url(../img/l-bi.png);
+                background-repeat: no-repeat;
+            }
+            .rance-text{
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0 23px;
+                color: #fff;
+            }
+            .dian{
+                margin: 0 5px;
+                font-size: 24px;
+                font-weight: 400;
+            }
+            .yingwen{
+                position: relative;
+                top: -2px;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            .ye-r{
+                display: inline-block;
+                width: 100px;
+                height: 7px;
+                position: relative;
+                top: -4px;
+                background-image: url(../img/r-bi.png);
+                background-repeat: no-repeat;
+            }
+        }
+        .incrance-list{
+            width: 1200px;
+            margin: 0 auto;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li{
+                width: 281px;
+                height: 280px;
+                background-color: #fff;
+                padding: 20px 30px;
+                .day-ying{
+                    width: 201px;
+                    height: 25px;
+                    overflow: hidden;
+                    font-size: 19px;
+                    color: #323232;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    margin: 0 auto;
+                    .col-ying{
+                        color: #f66539;
+                    }
+                }
+                .anm-dong{
+                    height: 150px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    .anm-text{
+                        width: 201px;
+                        height: 19px;
+                        overflow: hidden;
+                        font-size: 14px;
+                        margin: 0 auto;
+                        color: #a5a5a5;
+                    }
+                    .round{
+                        display: inline-block;
+                        width: 146px;
+                        height: 100px;
+                        background-position: 0 -4036px;
+                        margin-top: 12px;
+                        text-align: center;
+                        margin-bottom: 100px;
+                        .num-bai{
+                            font-size: 46px;
+                            font-weight: 700;
+                            color: #f66539;
+                            // margin-top: 32px;
+                            text-align: center;
+                        }
+                        .hist{
+                            font-size: 14px;
+                            color: #f66539;
+                            text-align: center;
+                        }
+                        .chan-pin {
+                            width: 205px;
+                            height: 19px;
+                            overflow: hidden;
+                            font-size: 14px;
+                            color: #323232;
+                            font-weight: 700;
+                            margin-top: 15px;
+                            text-align: center;
+                        }
+                        .zeren{
+                            font-size: 14px;
+                            color: #a5a5a5;
+                            margin-top: 8px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .liji-btn{
+                    display: block;
+                    width: 192px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    color: #fff;
+                    font-size: 14px;
+                    background: #fd7045;
+                    margin-top: 15px;
+                }
+            }
+        } 
+    }
+    .JD-service{
+        width: 1200px;
+        margin: 0 auto;
+        .line1{
+            width: 100%;
+            height: 220px;
+            a{
+                width: 294px;
+                height: 220px;
+                background-color: pink;
+            }
+        }
+    }
+    .brand{
+        width: 1200px;
+        overflow: hidden;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-weight: 700;
+            font-size: 20px;
+            color: #323232;
+            margin-top: 40px;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+            li{
+                width: 120px;
+                height: 40px;
+                img{
+                    width: 100%;
+                }   
+            }
+        }
+    }
+}

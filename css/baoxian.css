@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, "Microsoft Yahei", "微软雅黑", "Hiragino Sans GB", "宋体";
+}
+.incrance-bill .in-bil .insurance-list li .liji-btn {
+  display: block;
+  width: 192px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  background: #fd7045;
+  margin-top: 15px;
+}
+.content {
+  width: 100%;
+  background-color: #F9F9F9;
+}
+.content .content-bg {
+  width: 100%;
+}
+.content .content-bg .slide {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  z-index: 1;
+}
+.content .content-bg .slide a {
+  width: 100%;
+  height: 430px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.content .content-bg .slide .content {
+  width: 1200px;
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.content .content-bg .slide .content .left {
+  width: 280px;
+  height: 100%;
+  background-color: #166562;
+  z-index: 5;
+  float: left;
+}
+.content .content-bg .slide .content .right {
+  width: 220px;
+  height: 100%;
+  background-color: #999;
+  z-index: 5;
+  float: right;
+}
+.content .hot-protection {
+  width: 1200px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.content .hot-protection .hot-title {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Arial, "Microsoft Yahei", "Hiragino Sans GB";
+}
+.content .hot-protection .hot-title .le-t {
+  display: inline-block;
+  width: 101px;
+  height: 7px;
+  background-position: 0 -5236px;
+  position: relative;
+  top: -4px;
+  background-image: url(../img/s-sd35d9523f1.png);
+  background-repeat: no-repeat;
+}
+.content .hot-protection .hot-title .hot-text {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 23px;
+  color: #323232;
+}
+.content .hot-protection .hot-title .dian {
+  margin: 0 5px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.content .hot-protection .hot-title .yingwen {
+  position: relative;
+  top: -2px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.content .hot-protection .hot-title .ri-t {
+  display: inline-block;
+  width: 100px;
+  height: 7px;
+  background-position: 0 -5355px;
+  position: relative;
+  top: -4px;
+  background-image: url(../img/s-sd35d9523f1.png);
+  background-repeat: no-repeat;
+}
+.content .hot-protection .bao {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.content .hot-protection .bao .up-slide {
+  width: 280px;
+  height: 100%;
+}
+.content .hot-protection .bao .up-slide a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.content .hot-protection .bao .up-slide a .need {
+  position: absolute;
+  top: -150px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+}
+.content .hot-protection .bao .up-slide a .baise {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  top: -100px;
+}
+.content .hot-protection .bao .up-slide a .baise .zhe-zhao {
+  width: 280px;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+.content .hot-protection .bao .up-slide a .baise a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  filter: alpha(opacity=0);
+  opacity: 0.5;
+  transition: 0.6s all ease-in;
+}
+.content .hot-protection .bao .up-slide a .baise .zhe-text {
+  width: 250px;
+  position: absolute;
+  bottom: -105px;
+  left: 0;
+  padding: 15px;
+  height: 155px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  z-index: 11;
+  transition: all 0.3s ease-in-out;
+}
+.content .hot-protection .bao .up-slide a .baise .zhe-text .jiao-tong {
+  font-size: 16px;
+  color: #323232;
+  display: inline-block;
+  margin-bottom: 8px;
+  position: absolute;
+  top: 0;
+}
+.content .hot-protection .bao .up-slide a .baise .zhe-text .num {
+  display: block;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ff5e2d;
+}
+.content .hot-protection .bao .up-slide a .baise .zhe-text .num .small {
+  font-size: 13px;
+}
+.content .hot-protection .bao .up-slide a .baise .zhe-text .num .qi {
+  font-size: 13px;
+}
+.content .hot-protection .bao div:nth-child(4) {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content .hot-protection .bao div:nth-child(4) .top-slide {
+  width: 100%;
+  height: 145px;
+  background-color: #FCD962;
+}
+.content .hot-protection .bao div:nth-child(4) .bottom-slide {
+  width: 100%;
+  height: 145px;
+  background-color: #C9E384;
+}
+.content .incrance-bill {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  height: 436px;
+  padding-top: 60px;
+  background: url(../img/ye-jing.png) center center no-repeat;
+}
+.content .incrance-bill .rance-title {
+  color: #eee;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Arial, "Microsoft Yahei", "Hiragino Sans GB";
+}
+.content .incrance-bill .rance-title .ye-l {
+  display: inline-block;
+  width: 101px;
+  height: 7px;
+  position: relative;
+  top: -4px;
+  background-image: url(../img/l-bi.png);
+  background-repeat: no-repeat;
+}
+.content .incrance-bill .rance-title .rance-text {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 23px;
+  color: #fff;
+}
+.content .incrance-bill .rance-title .dian {
+  margin: 0 5px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.content .incrance-bill .rance-title .yingwen {
+  position: relative;
+  top: -2px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.content .incrance-bill .rance-title .ye-r {
+  display: inline-block;
+  width: 100px;
+  height: 7px;
+  position: relative;
+  top: -4px;
+  background-image: url(../img/r-bi.png);
+  background-repeat: no-repeat;
+}
+.content .incrance-bill .incrance-list {
+  width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.content .incrance-bill .incrance-list li {
+  width: 281px;
+  height: 280px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+.content .incrance-bill .incrance-list li .day-ying {
+  width: 201px;
+  height: 25px;
+  overflow: hidden;
+  font-size: 19px;
+  color: #323232;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin: 0 auto;
+}
+.content .incrance-bill .incrance-list li .day-ying .col-ying {
+  color: #f66539;
+}
+.content .incrance-bill .incrance-list li .anm-dong {
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.content .incrance-bill .incrance-list li .anm-dong .anm-text {
+  width: 201px;
+  height: 19px;
+  overflow: hidden;
+  font-size: 14px;
+  margin: 0 auto;
+  color: #a5a5a5;
+}
+.content .incrance-bill .incrance-list li .anm-dong .round {
+  display: inline-block;
+  width: 146px;
+  height: 100px;
+  background-position: 0 -4036px;
+  margin-top: 12px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.content .incrance-bill .incrance-list li .anm-dong .round .num-bai {
+  font-size: 46px;
+  font-weight: 700;
+  color: #f66539;
+  text-align: center;
+}
+.content .incrance-bill .incrance-list li .anm-dong .round .hist {
+  font-size: 14px;
+  color: #f66539;
+  text-align: center;
+}
+.content .incrance-bill .incrance-list li .anm-dong .round .chan-pin {
+  width: 205px;
+  height: 19px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #323232;
+  font-weight: 700;
+  margin-top: 15px;
+  text-align: center;
+}
+.content .incrance-bill .incrance-list li .anm-dong .round .zeren {
+  font-size: 14px;
+  color: #a5a5a5;
+  margin-top: 8px;
+  margin: 0 auto;
+}
+.content .incrance-bill .incrance-list li .liji-btn {
+  display: block;
+  width: 192px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  background: #fd7045;
+  margin-top: 15px;
+}
+.content .JD-service {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content .JD-service .line1 {
+  width: 100%;
+  height: 220px;
+}
+.content .JD-service .line1 a {
+  width: 294px;
+  height: 220px;
+  background-color: pink;
+}
+.content .brand {
+  width: 1200px;
+  overflow: hidden;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+.content .brand h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #323232;
+  margin-top: 40px;
+}
+.content .brand ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.content .brand ul li {
+  width: 120px;
+  height: 40px;
+}
+.content .brand ul li img {
+  width: 100%;
+}

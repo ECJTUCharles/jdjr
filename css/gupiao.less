@@ -1,0 +1,622 @@
+header{
+    .topBanner{
+        background:url(../img/gupiao-topbanner.jpg) top center;
+    }
+}
+body{
+    background: #303849;
+    .main{
+        width: 1200px;
+        margin: 0 auto;
+        
+        &>dl:nth-child(1){
+            height: 80px;
+            padding: 20px 5px 0;
+            width: 1190px;
+            dt{
+                float: left;
+                min-width: 295px;
+                div:nth-child(1){
+                    float: left;
+                    position: relative;
+                    width: 60px;
+                    height: 60px;
+                    span{
+                        display: block;
+                        overflow: hidden;
+                        width: 55px;
+                        height: 55px;
+                        border: 5px solid #ececec;
+                        border-radius: 50%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                div:nth-child(2){
+                    float: left;
+                    padding-left: 10px;
+                    color: #a5a5a5;
+                    position: relative;
+                    z-index: 5;
+                    &>a{
+                        display: inline-block;
+                        margin: 6px 0 6px 10px;
+                        padding: 0 10px;
+                        height: 22px;
+                        border-radius: 3px;
+                        background-color: #0287fe;
+                        color: #fff;
+                        line-height: 22px;
+                    }
+                    &>p{
+                        width: 180px;
+                        height: 14px;
+                        line-height: 14px;
+                        padding: 5px 10px 7px;
+                        background: #464f63;
+                        border-radius: 50px;
+                        position: relative;
+                        input{
+                            margin-top: -4px;
+                            padding: 5px 0;
+                            width: 165px;
+                            height: 14px;
+                            font-size: 12px;
+                            line-height: 14px;
+                            font-family: arial,"microsoft yahei";
+                            background: 0 0;
+                            color: #fff;
+                            outline: none;
+                        }
+                        a{
+                            float: right;
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            background: url(../img/gupiao-icons.png) no-repeat 0 -4122px;
+                            &:hover{
+                                background-position: 0 -4156px;
+                            }
+                        }
+                        &:hover{
+                            background: #566074;
+                        }
+                    }
+                }
+            }
+            dd{
+                float: left;
+                width: 840px;
+                height: 80px;
+                overflow: hidden;
+                position: relative;
+                ul{
+                    width: 2000px;
+                    height: 62px;
+                    li{
+                        float: left;
+                        width: 280px;
+                        height: 60px;
+                        border-left: 1px solid #282f3f;
+                        -webkit-transition: 0.5s all;
+                        a{
+                            display: block;
+                            div:nth-child(1){
+                                height: 60px;
+                                margin-left: 28px;
+                                padding-right: 20px;
+                                float: left;
+                                background: url(../img/gupiao-trendUp.png) no-repeat 0 bottom;
+                                p{
+                                    height: 33px;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    line-height: 33px;
+                                    color: #fff;
+                                }
+                            }
+                            div:nth-child(2){
+                                float: left;
+                                color: #ff5256;
+                                p:nth-child(1){
+                                    font-size: 30px;
+                                    font-weight: 700;
+                                    height: 33px;
+                                    line-height: 33px;
+                                    span{
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        width: 35px;
+                                        height: 33px;
+                                        background: url(../img/gupiao-icons.png) no-repeat 0 -2311px;
+                                    }
+                                }
+                                p:nth-child(2){
+                                    font-size: 14px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    span:nth-child(1){
+                                        padding-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mainContent{
+            overflow: hidden;
+            padding-left: 70px;
+            min-height: 500px;
+            position: relative;
+            background-color: #f9f9f9;
+            .mainLeftBar{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 70px;
+                height: 100%;
+                background-color: #1c202a;
+                ul{
+                    li{
+                        a{
+                            display: block;
+                            height: 35px;
+                            padding-top: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 14px;
+                            opacity: 0.7;
+                            border-bottom: 1px solid #3d3e3d;
+                            background: url(../img/gupiao-icons.png) no-repeat;
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                        &.current{
+                            a{
+                                opacity: 1;
+                                background-color: #0287fe;
+                                border-bottom: 1px solid #0287fe;
+                            }
+                        }
+                        &:nth-child(1){
+                            a{
+                                background-position: 0 -907px;
+                            }
+                        }
+                        &:nth-child(2){
+                            a{
+                                background-position: 0 -1906px;
+                            }
+                        }
+                        &:nth-child(3){
+                            a{
+                                background-position: 0 -3008px;
+                            }
+                        }
+                        &:nth-child(4){
+                            a{
+                                background-position: 0 -503px;
+                            }
+                        }
+                        &:nth-child(5){
+                            a{
+                                background-position: 0 -907px;
+                            }
+                        }
+                        &:nth-child(6){
+                            a{
+                                background-position: 0 -3837px;
+                            }
+                        }
+                        &:last-child{
+                            a{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .mainMidBar{
+                float: left;
+                overflow: hidden;
+                padding: 15px 30px 130px;
+                width: 750px;
+                height: auto;
+                min-height: 700px;
+                background-color: #fff;
+                &>p{
+                    margin: 0;
+                    padding: 0;
+                    color: #323232;
+                    font-size: 16px;
+                    height: 46px;
+                    line-height: 46px;
+                    clear: both;
+                    span{
+                        padding-right: 5px;
+                        border-left: 2px solid #000;
+                    }
+                }
+                .mainMidTop{
+                    width: 100%;
+                    li{
+                        float: left;
+                        width: 360px;
+                        position: relative;
+                        padding-bottom: 12px;
+                        &:nth-child(1){
+                            margin-right: 30px;
+                        }
+                        &>a{
+                            display: block;
+                            margin-bottom: 10px;
+                            width: 100%;
+                            height: auto;
+                            img{
+                                width: 100%;
+                                height: 170px;
+                                position: relative;
+                                z-index: 1;
+                            }
+                            p{
+                                position: absolute;
+                                z-index: 2;
+                                line-height: 36px;
+                                text-align: center;
+                                color: #fff;
+                                font-size: 30px;
+                                top: 55px;
+                                font-weight: 700;
+                                width: 320px;
+                                padding: 0 20px;
+                                text-shadow: 0 0 3px rgba(0,0,0,.3);
+                            }
+                        }
+                        &>p{
+                            width: 360px;
+                            overflow: hidden;
+                            height: 26px;
+                            a{
+                                font-size: 16px;
+                                line-height: 26px;
+                                color: #323232;
+                                span{
+                                    font-style: normal;
+                                    color: #ff5256;
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .buyShow{
+                    width: 100%;
+                    height: 52px;
+                    position: relative;
+                    overflow: hidden;
+                    ul{
+                        animation: 30s slideToOn forwards infinite;
+                        &:hover{
+                            animation-play-state: paused;
+                        }
+                        li{
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 14px;
+                            color: #323232;
+                            position: relative;
+                            border-top: 1px dotted #e6e6e6;
+                            border-bottom: 1px dotted #e6e6e6;
+                            width: 750px;
+                            .userName{
+                                float: left;
+                                color: #5e5e5e;
+                                font-weight: 700;
+                                &:hover{
+                                    color: #ff5256;
+                                }
+                            }
+                            .time{
+                                float: left;
+                                font-size: 12px;
+                                color: #a5a5a5;
+                                font-style: normal;
+                                padding: 0 5px;
+                            }
+                            .status{
+                                float: left;
+                                display: block;
+                                margin: 14px 5px;
+                                padding: 2px 5px;
+                                height: 16px;
+                                line-height: 16px;
+                                font-size: 12px;
+                                color: #fff;
+                                -moz-border-radius: 2px;
+                                -webkit-border-radius: 2px;
+                                border-radius: 2px;
+                                &.status-sell{
+                                    background-color: #5dcd0b;
+                                }
+                                &.status-buy{
+                                    background-color: #ff5256;
+                                }
+                            }
+                            .gupiaoName{
+                                float: left;
+                                color: #5e5e5e;
+                                &:hover{
+                                    color: #ff5256;
+                                }
+                            }
+                            .strong{
+                                float: left;
+                                font-weight: 700;
+                                padding: 0 8px;
+                            }
+                            .trend{
+                                float: left;
+                                font-size: 13px;
+                            }
+                            .atten{
+                                float: right;
+                                display: block;
+                                margin: 11px 0;
+                                width: 62px;
+                                height: 28px;
+                                line-height: 28px;
+                                color: #0287fe;
+                                text-align: center;
+                                color: #0287fe;
+                                border: 1px solid #0287fe;
+                                -moz-border-radius: 3px;
+                                -webkit-border-radius: 3px;
+                                border-radius: 3px;
+                                font-family: arial,"microsoft yahei";
+                                background-color: #fff;
+                                &:hover{
+                                    color: #fff;
+                                    background: #0287fe;
+                                }
+                            }
+                        }
+                    }
+                }
+                .mainList{
+                    margin-top: 22px;
+                    dt{
+                        border-bottom: 1px solid #e6e6e6;
+                        height: 29px;
+                        margin-bottom: 10px;
+                        li{
+                            float: left;
+                            background-color: #ededed;
+                            border: 1px solid #ededed;
+                            font-size: 14px;
+                            color: #5e5e5e;
+                            height: 28px;
+                            line-height: 28px;
+                            width: 81px;
+                            text-align: center;
+                            margin-right: 3px;
+                            cursor: pointer;
+                            &.current{
+                                border: 1px solid #e6e6e6;
+                                border-bottom: 0;
+                                color: #323232;
+                                height: 29px;
+                                background-color: #f9f9f9;
+                                font-weight: 700;
+                                background: #fff;
+                            }
+                            &:not(.current){
+                                &:hover{
+                                    background: #e3e3e3;
+                                }
+                            }
+                        }
+                    }
+                    dd{
+                        // position: relative;
+                        &>ul{
+                            // position: absolute;
+                            // z-index: 1;
+                            display: none;
+                            background-color: #fff;
+                            &.current{
+                                // z-index: 2;
+                                display: block;
+                            }
+                            &>li{
+                                float: left;
+                                width: 360px;
+                                padding: 14px 0 10px;
+                                border-top: 1px dotted #e6e6e6;
+                                &:nth-child(2n-1){
+                                    margin-right: 30px;
+                                }
+                                p:nth-child(1){
+                                    height: 24px;
+                                    font-size: 12px;
+                                    line-height: 24px;
+                                    color: #a5a5a5;
+                                    text-align: right;
+                                }
+                                p:nth-child(2){
+                                    width: 360px;
+                                    height: 28px;
+                                    overflow: hidden;
+                                    a{
+                                        font-size: 16px;
+                                        line-height: 28px;
+                                        color: #323232;
+                                        &:hover{
+                                            color: #ff5256;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .mainRightBar{
+                float: right;
+                padding: 0 30px 20px;
+                width: 260px;
+                height: 100%;
+                &>dl{
+                    &>dt{
+                        overflow: hidden;
+                        ul{
+                            overflow: hidden;
+                            width: 320px;
+                            margin-left: -30px;
+                            li{
+                                background: #f0f0f0;
+                                float: left;
+                                width: 160px;
+                                height: 60px;
+                                font-size: 16px;
+                                color: #5e5e5e;
+                                line-height: 60px;
+                                text-align: center;
+                                cursor: pointer;
+                                &.current{
+                                    background: #f9f9f9;
+                                    color: #0287fe;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                    &>dd{
+                        padding-top: 25px;
+                        dt{
+                            ul{
+                                border-bottom: 1px solid #e6e6e6;
+                                height: 29px;
+                                margin-bottom: 10px;
+                                li{
+                                    float: left;
+                                    background-color: #ededed;
+                                    border: 1px solid #ededed;
+                                    font-size: 14px;
+                                    color: #5e5e5e;
+                                    height: 28px;
+                                    line-height: 28px;
+                                    width: 81px;
+                                    text-align: center;
+                                    margin-right: 3px;
+                                    cursor: pointer;
+                                    -moz-border-radius: 3px 3px 0 0;
+                                    -webkit-border-radius: 3px;
+                                    border-radius: 3px 3px 0 0;
+                                    &.current{
+                                        border: 1px solid #e6e6e6;
+                                        border-bottom: 0;
+                                        color: #323232;
+                                        height: 29px;
+                                        background-color: #f9f9f9;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                        dl{
+                            &:nth-child(1){
+                                dd{
+                                    float: left;
+                                    border-top: 1px dotted #e6e6e6;
+                                    padding-top: 15px;
+                                    height: 60px;
+                                    width: 85px;
+                                    text-align: center;
+                                    margin-left: -1px;
+                                    margin-top: -1px;
+                                    font-size: 14px;
+                                    &:not(:nth-child(3n-1)){
+                                        border-left: 1px dotted #e6e6e6;
+                                    }
+                                    &:nth-child(2),&:nth-child(3),&:nth-child(4){
+                                        border-top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes slideToOn {
+    0%{
+        transform: translateY(0px);
+    }
+    9%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-52px);
+    }
+    19%{
+        transform: translateY(-52px);
+    }
+    20%{
+        transform: translateY(-104px);
+    }
+    29%{
+        transform: translateY(-104px);
+    }
+    30%{
+        transform: translateY(-156px);
+    }
+    39%{
+        transform: translateY(-156px);
+    }
+    40%{
+        transform: translateY(-208px);
+    }
+    49%{
+        transform: translateY(-208px);
+    }
+    50%{
+        transform: translateY(-260px);
+    }
+    59%{
+        transform: translateY(-260px);
+    }
+    60%{
+        transform: translateY(-312px);
+    }
+    69%{
+        transform: translateY(-312px);
+    }
+    70%{
+        transform: translateY(-364px);
+    }
+    79%{
+        transform: translateY(-364px);
+    }
+    80%{
+        transform: translateY(-416px);
+    }
+    89%{
+        transform: translateY(-416px);
+    }
+    90%{
+        transform: translateY(-468px);
+    }
+    99%{
+        transform: translateY(-468px);
+    }
+    100%{
+        transform: translateY(-520px);
+    }
+}
