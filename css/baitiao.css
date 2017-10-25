@@ -1,407 +1,477 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  font-family: Arial, "Microsoft Yahei", "微软雅黑", "Hiragino Sans GB", "宋体";
+    font-family: Arial, "Microsoft Yahei", "微软雅黑", "Hiragino Sans GB", "宋体";
 }
+
 .carousel-indicators {
-  margin-left: -70%;
+    margin-left: -70%;
 }
+
 #navhover {
-  color: red;
+    color: red;
 }
+
 #navhover .r-word {
-  color: red;
-  font-weight: bold;
+    color: red;
+    font-weight: bold;
 }
+
 #navhover .r-word:hover {
-  color: #000;
-  font-weight: bold;
+    color: #000;
+    font-weight: bold;
 }
+
 .sub-nav {
-  width: 100%;
-  border-top: 1px solid #ddd;
-  padding: 10px 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
 }
+
 .sub-nav .grid-1200 {
-  width: 1200px;
-  margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto;
 }
+
 .sub-nav .grid-1200 a {
-  width: 48px;
-  height: 40px;
-  color: #474e5d;
-  font-size: 14px;
-  margin-right: 10px;
+    width: 48px;
+    height: 40px;
+    color: #474e5d;
+    font-size: 14px;
+    margin-right: 10px;
 }
+
 .banner-bg {
-  position: relative;
-  width: 100%;
-  background: url(../img/bannerBg.jpg) center 0 no-repeat;
+    position: relative;
+    width: 100%;
+    background: url(../img/bannerBg.jpg) center 0 no-repeat;
 }
+
 .banner-bg .content {
-  width: 1200px;
-  height: 606px;
-  margin: 53px auto 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    width: 1200px;
+    height: 606px;
+    margin: 53px auto 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 .banner-bg .content .content-left {
-  width: 450px;
-  height: 100%;
-  overflow: hidden;
-  background: url(../img/Videobg.jpg) center no-repeat;
-  z-index: 5;
+    width: 450px;
+    height: 100%;
+    overflow: hidden;
+    background: url(../img/videobg.jpg) center no-repeat;
+    z-index: 5;
 }
+
 .banner-bg .content .content-right {
-  width: 740px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 740px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .banner-bg .content .content-right .r-top {
-  width: 100% ;
-  height: 368px;
-  overflow: hidden;
+    width: 100%;
+    height: 368px;
+    overflow: hidden;
 }
+
 .banner-bg .content .content-right .right-bottom {
-  width: 100%;
-  height: 228px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    width: 100%;
+    height: 228px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l {
-  width: 360px;
-  background: url(../img/cheapBg.jpg) center no-repeat;
-  padding: 30px;
+    width: 360px;
+    background: url(../img/cheapBg.jpg) center no-repeat;
+    padding: 30px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l h1 {
-  display: block;
-  background-image: url(../img/s-sa102492595.png);
-  background-repeat: no-repeat;
-  background-position: 0 -2627px;
-  height: 49px;
-  width: 158px;
+    display: block;
+    background-image: url(../img/s-sa102492595.png);
+    background-repeat: no-repeat;
+    background-position: 0 -2627px;
+    height: 49px;
+    width: 158px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l h4 {
-  color: #fff;
-  font-size: 14px;
+    color: #fff;
+    font-size: 14px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l .contains {
-  width: 100%;
-  list-style: none;
+    width: 100%;
+    list-style: none;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l .contains li {
-  width: 100%;
-  margin-bottom: 5px;
+    width: 100%;
+    margin-bottom: 5px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l .contains li a {
-  width: 100%;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l .contains li a span {
-  color: #fff;
+    color: #fff;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-l .contains li a span em {
-  color: #c9a96e;
+    color: #c9a96e;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r {
-  width: 360px;
-  background: url(../img/headlinesBg.jpg) center no-repeat;
-  padding: 30px;
+    width: 360px;
+    background: url(../img/headlinesBg.jpg) center no-repeat;
+    padding: 30px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r h1 {
-  display: block;
-  background-image: url(../img/s-sa102492595.png);
-  background-repeat: no-repeat;
-  background-position: 0 -1784px;
-  height: 49px;
-  width: 158px;
+    display: block;
+    background-image: url(../img/s-sa102492595.png);
+    background-repeat: no-repeat;
+    background-position: 0 -1784px;
+    height: 49px;
+    width: 158px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r h4 {
-  color: #fff;
-  font-size: 14px;
+    color: #fff;
+    font-size: 14px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r .contains {
-  width: 100%;
-  list-style: none;
+    width: 100%;
+    list-style: none;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r .contains li {
-  width: 100%;
-  margin-bottom: 5px;
+    width: 100%;
+    margin-bottom: 5px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r .contains li a {
-  width: 100%;
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r .contains li a span {
-  color: #fff;
+    color: #fff;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r .contains li a span em {
-  color: #c9a96e;
+    color: #c9a96e;
 }
+
 .banner-bg .content .content-right .right-bottom .bai-r .contains li a span:hover {
-  color: #c9a96e;
-  transition: all .5s ease;
+    color: #c9a96e;
+    transition: all .5s ease;
 }
+
 .banner-bg .infolist {
-  width: 1200px;
-  height: 214px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+    width: 1200px;
+    height: 214px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
+
 .banner-bg .infolist .hidden-part {
-  width: 1130px;
-  height: 206px;
+    width: 1130px;
+    height: 206px;
 }
+
 .banner-bg .infolist .hidden-part ul {
-  width: 100%;
-  height: 206px;
+    width: 100%;
+    height: 206px;
 }
+
 .banner-bg .infolist .hidden-part ul li {
-  width: 240px;
-  height: 48px;
+    width: 240px;
+    height: 48px;
 }
+
 .banner-bg .infolist .xiaobai-live {
-  width: 260px;
-  height: 214px;
+    width: 260px;
+    height: 214px;
 }
+
 .banner-bg .infolist .xiaobai-live a {
-  display: block;
-  width: 117px;
-  height: 26px;
-  position: relative;
-  left: 70px;
-  top: 50px;
-  margin-bottom: 16px;
-  background-position: 0 -1423px;
-  background-image: url(../img/s-sa102492595.png);
-  background-repeat: no-repeat;
+    display: block;
+    width: 117px;
+    height: 26px;
+    position: relative;
+    left: 70px;
+    top: 50px;
+    margin-bottom: 16px;
+    background-position: 0 -1423px;
+    background-image: url(../img/s-sa102492595.png);
+    background-repeat: no-repeat;
 }
+
 .banner-bg .infolist .xiaobai-live .ansower {
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  margin-top: 70px;
-  font-size: 14px;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 70px;
+    font-size: 14px;
 }
+
 .banner-bg .infolist .rightbusi {
-  width: 940px;
-  height: 166px;
+    width: 940px;
+    height: 166px;
 }
+
 .banner-bg .infolist .rightbusi ul {
-  width: 100%;
-  list-style: none;
-  padding-top: 40px;
+    width: 100%;
+    list-style: none;
+    padding-top: 40px;
 }
+
 .banner-bg .infolist .rightbusi ul li {
-  float: left;
-  width: 174px;
-  height: 114px;
+    float: left;
+    width: 174px;
+    height: 114px;
 }
+
 .banner-bg .infolist .rightbusi ul li a {
-  width: 100%;
-  line-height: 30px;
-  text-decoration: none;
+    width: 100%;
+    line-height: 30px;
+    text-decoration: none;
 }
+
 .banner-bg .infolist .rightbusi ul li a div {
-  width: 100%;
-  margin: 10px auto;
-  display: flex;
-  justify-content: space-around;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
 }
+
 .banner-bg .infolist .rightbusi ul li a div img {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
 }
+
 .banner-bg .infolist .rightbusi ul li a span {
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  color: #000;
-  transition: 0.6s ease-in;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    transition: 0.6s ease-in;
 }
+
 .banner-bg .infolist .rightbusi ul li a span:hover {
-  transform: color;
+    transform: color;
 }
+
 .banner-bg .infolist .rightbusi ul li a p {
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  color: #000;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
 }
+
 .banner-bg .dbt {
-  width: 100%;
-  height: 596px;
-  background: url(../img/item_dbt_bg.jpg) center center no-repeat;
+    width: 100%;
+    height: 596px;
+    background: url(../img/item_dbt_bg.jpg) center center no-repeat;
 }
+
 .banner-bg .dbt .container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .banner-bg .dbt .container .sideTitle {
-  width: 207px;
-  height: 368px;
-  margin: 44px 0 0 0;
+    width: 207px;
+    height: 368px;
+    margin: 44px 0 0 0;
 }
+
 .banner-bg .dbt .container .sideTitle h3 {
-  display: block;
-  text-indent: -999em;
-  background-position: 0 -4443px;
-  height: 65px;
-  width: 207px;
-  background-image: url(../img/s-sa102492595.png);
-  background-repeat: no-repeat;
+    display: block;
+    text-indent: -999em;
+    background-position: 0 -4443px;
+    height: 65px;
+    width: 207px;
+    background-image: url(../img/s-sa102492595.png);
+    background-repeat: no-repeat;
 }
+
 .banner-bg .dbt .container .sideTitle .privileged {
-  display: block;
-  background-position: 0 -3727px;
-  height: 32px;
-  width: 182px;
-  margin: 19px 0 50px;
-  background-image: url(../img/s-sa102492595.png);
-  background-repeat: no-repeat;
+    display: block;
+    background-position: 0 -3727px;
+    height: 32px;
+    width: 182px;
+    margin: 19px 0 50px;
+    background-image: url(../img/s-sa102492595.png);
+    background-repeat: no-repeat;
 }
+
 .banner-bg .dbt .container .sideTitle .privileged em {
-  display: inline-block;
-  height: 12px;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 12px;
-  color: #fff;
-  margin: 10px 0;
-  padding-left: 14px;
-  padding-right: 7px;
+    display: inline-block;
+    height: 12px;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 12px;
+    color: #fff;
+    margin: 10px 0;
+    padding-left: 14px;
+    padding-right: 7px;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj {
-  height: 202px;
+    height: 202px;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj .kyq {
-  display: block;
-  height: 12px;
-  line-height: 12px;
-  font-size: 12px;
-  padding-bottom: 12px;
-  color: #000;
+    display: block;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    padding-bottom: 12px;
+    color: #000;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj .kyq .yhj_list {
-  width: 100%;
+    width: 100%;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj .kyq .yhj_list .coupons {
-  position: relative;
-  display: block;
-  background-position: 0 -1843px;
-  height: 73px;
-  width: 186px;
-  color: #fff;
-  white-space: nowrap;
-  background-image: url(../img/s-sa102492595.png);
-  background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    background-position: 0 -1843px;
+    height: 73px;
+    width: 186px;
+    color: #fff;
+    white-space: nowrap;
+    background-image: url(../img/s-sa102492595.png);
+    background-repeat: no-repeat;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj .kyq .yhj_list .coupons i {
-  display: inline-block;
-  height: 20px;
-  line-height: 20px;
-  margin: 14px 0 0 12px;
-  font-size: 20px;
-  font-style: normal;
-  float: left;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 14px 0 0 12px;
+    font-size: 20px;
+    font-style: normal;
+    float: left;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj .kyq .yhj_list .coupons strong {
-  display: inline-block;
-  float: left;
-  width: 50px;
-  height: 46px;
-  line-height: 46px;
-  font-family: Impact;
-  font-style: italic;
-  margin: 9px 0 0 -15px;
-  text-align: center;
-  font-weight: 700;
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-family: Impact;
+    font-style: italic;
+    margin: 9px 0 0 -15px;
+    text-align: center;
+    font-weight: 700;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj .kyq .yhj_list .coupons span {
-  display: inline-block;
-  float: left;
-  margin: 18px -5px 0 7px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 18px;
-  font-size: 14px;
+    display: inline-block;
+    float: left;
+    margin: 18px -5px 0 7px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
 }
+
 .banner-bg .dbt .container .sideTitle .yhj .kyq .yhj_list .coupons span em {
-  display: block;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
+    display: block;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
 }
+
 .banner-bg .dbt .container .r-tap {
-  width: 888px;
-  height: 496px;
-  display: flex;
-  flex-direction: row;
-  margin: 44px 0 0 75px;
-  justify-content: space-between;
+    width: 888px;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    margin: 44px 0 0 75px;
+    justify-content: space-between;
 }
+
 .banner-bg .dbt .container .r-tap .tap1 {
-  width: 250px;
-  height: 496px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 250px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .banner-bg .dbt .container .r-tap .tap1 .tap1-top {
-  width: 250px;
-  height: 205px;
-  background-color: #fff;
-  padding: 20px;
+    width: 250px;
+    height: 205px;
+    background-color: #fff;
+    padding: 20px;
 }
+
 .banner-bg .dbt .container .r-tap .tap1 .tap1-bottom {
-  width: 250px;
-  height: 287px;
-  background-color: #fff;
-  padding: 10px;
-  padding-top: 20px;
+    width: 250px;
+    height: 287px;
+    background-color: #fff;
+    padding: 10px;
+    padding-top: 20px;
 }
+
 .banner-bg .dbt .container .r-tap .tap2 {
-  width: 330px;
-  height: 496px;
-  background-color: #fff;
-  margin: 0 5px;
-  padding: 20px;
+    width: 330px;
+    height: 496px;
+    background-color: #fff;
+    margin: 0 5px;
+    padding: 20px;
 }
+
 .banner-bg .dbt .container .r-tap .tap2 .img-middle {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  background: url(../img/59130e4cNa6d07fe0.jpg) no-repeat;
-  background-size: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: url(../img/59130e4cNa6d07fe0.jpg) no-repeat;
+    background-size: 100%;
 }
+
 .banner-bg .dbt .container .r-tap .tap3 {
-  width: 290px;
-  height: 496px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 290px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .banner-bg .dbt .container .r-tap .tap3 .tap3-top {
-  padding: 10px;
-  width: 290px;
-  height: 246px;
-  background-color: #fff;
+    padding: 10px;
+    width: 290px;
+    height: 246px;
+    background-color: #fff;
 }
+
 .banner-bg .dbt .container .r-tap .tap3 .tap3-bottom {
-  width: 290px;
-  height: 246px;
-  background-color: #fff;
+    width: 290px;
+    height: 246px;
+    background-color: #fff;
 }
